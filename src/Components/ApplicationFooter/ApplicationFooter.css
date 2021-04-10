@@ -1,0 +1,61 @@
+.ApplicationFooter {
+    width: 100%;
+    color: var(--light-color);
+    background-color: var(--dark-grey-color);
+    padding: var(--page-padding);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+.top-half {
+    margin-bottom: 2.5rem;
+}
+
+.bottom-half {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ApplicationFooter .links-copyright {
+    color: var(--light-grey-color);
+    font-size: .8rem;
+}
+
+.ApplicationFooter .links-copyright > * {
+    margin-bottom: .5rem;
+}
+
+.ApplicationFooter .links-copyright a:not(:first-child) {
+    margin: 0 .5rem;
+}
+
+.ApplicationFooter .links-copyright a:first-child {
+    margin-right: .5rem;
+}
+
+.ApplicationFooter .socials {
+    font-size: 2rem;
+}
+
+.ApplicationFooter .socials i {
+    margin-right: 1rem;
+}
+
+.ApplicationFooter .stores img {
+    margin-left: 1rem;
+}
+
+#apple {
+    width: 125px;
+}
+
+#google {
+    width: 150px;
+}
+
+#windows {
+    width: 125px;
+}

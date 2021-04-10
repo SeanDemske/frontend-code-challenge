@@ -1,0 +1,22 @@
+.Tile img {
+    transition: all .25s ease;
+}
+
+.Tile:hover {
+    filter: brightness(100%);
+}
+
+.Tile img:hover {
+    -webkit-box-shadow: 0px 5px 22px 5px rgba(0,0,0,0.41); 
+    box-shadow: 0px 5px 22px 5px rgba(0,0,0,0.41);
+}
+
+.Tile img {
+    width: 250px;
+}
+
+.Tile p {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--dark-grey-color);
+}

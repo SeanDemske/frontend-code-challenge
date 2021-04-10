@@ -1,8 +1,19 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+body, html, #root {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +22,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --primary-color: #0181FF;
+  --secondary-color: #414141;
+  --light-color: #f3f3f3;
+  --light-grey-color: #6e6e6e;
+  --light-grey-links: #999999;
+  --dark-grey-color: #1E1E1E;
+
+  --page-padding: 0 30rem;
+}
+
+@media screen and (max-width: 1900px) {
+  :root {
+    --page-padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --page-padding: 0 2rem;
+  }
+}
+
+
+/* Buttons */
+.btn {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  border: none;
+  color: var(--light-color);
+  background-color: transparent;
+  padding: 1rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  filter: brightness(150%);
+}
+
+.btn-grey {
+  background-color: var(--dark-grey-color);
+}
+
+/* Links */
+a {
+  color: var(--light-grey-links);
+}
+
+a:hover {
+  filter: brightness(150%);
+}
+

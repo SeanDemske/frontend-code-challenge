@@ -1,0 +1,18 @@
+.PageHeader {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+    padding: var(--page-padding);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.PageHeader .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
