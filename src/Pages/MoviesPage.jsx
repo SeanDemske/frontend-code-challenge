@@ -18,13 +18,12 @@ const MoviesPage = () => {
             }
         }
         fetchData();
-        
     }, [])
 
     return (
         <>
             <PageHeader title="Popular Movies" />
-            <ProgramsDisplay />
+            <ProgramsDisplay programs={movies} />
         </>
     );
 }

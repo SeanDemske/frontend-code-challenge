@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import SeriesPage from "./Pages/SeriesPage";
 import MoviesPage from "./Pages/MoviesPage";
@@ -16,6 +16,7 @@ const Routes = () => {
           <Route exact path="/movies">
             <MoviesPage />
           </Route>
+          <Redirect to="/" />
         </Switch>
       );
 }
